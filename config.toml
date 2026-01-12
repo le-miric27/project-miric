@@ -1,0 +1,61 @@
+baseURL = "https://le-miric27.github.io/project-miric/"
+languageCode = "en-us"
+title = "Leonardo Mirić | 3D Artist & Game Developer"
+enableGitInfo = true
+enableRobotsTXT = true
+
+[params]
+  author = "Leonardo Mirić"
+  description = "3D Artist, Game Developer & Graphic Designer specializing in Blender, Unreal Engine 5, and visual design"
+  email = "leonardomiric27@gmail.com"
+  phone = "+385 92 348 4803"
+  artstation = "https://www.artstation.com/lemiric"
+  instagram = "https://www.instagram.com/le.mirich/"
+  tiktok = "https://www.tiktok.com/@lemiric4"
+  linkedin = "https://www.linkedin.com/in/lemirich/"
+  profileImage = "assets/profile.svg"
+  dateFormat = "January 2, 2006"
+  location = "Koprivnica, Croatia"
+
+  # SEO
+  keywords = ["Leonardo Mirić", "lemiric", "3D Artist", "Game Developer", "Blender", "Unreal Engine 5", "Croatia", "Graphic Designer"]
+  fullName = "Leonardo Mirić"
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    style = "monokai"
+    tabWidth = 4
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "CV"
+    url = "/cv/"
+    weight = 2
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]

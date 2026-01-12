@@ -1,0 +1,39 @@
+- name: "Video Game Development"
+  description: "Complete game development project including GDD creation with defined genre, visual identity, color palettes, mechanics and game objectives. Level design planning using bubble diagrams and initial world block-out. Programming and implementation of player mechanics, physics interactions, and environment logic."
+  technologies:
+    - "Unreal Engine 5"
+    - "Blender"
+    - "Adobe Illustrator"
+    - "Adobe Photoshop"
+    - "Audacity"
+  link: "https://lemiric.artstation.com/"
+
+- name: "3D Environment & Asset Creation"
+  description: "Creation of 3D models for video games and animations including weapons, characters, objects, and environment elements. Complete 3D environments with emphasis on composition, functionality, visual clarity, and optimization. Using Shading editor for modular textures."
+  technologies:
+    - "Blender"
+    - "Tree It"
+    - "Adobe Photoshop"
+    - "Texturing"
+    - "UV Mapping"
+  link: "https://lemiric.artstation.com/"
+
+- name: "Interior Design Visualization"
+  description: "Design and creation of interior concepts, storyboards, and scripts for short animations and commercials. Focus on visual composition, lighting, and functional design for realistic and stylized renders."
+  technologies:
+    - "Blender"
+    - "Adobe Photoshop"
+    - "Adobe After Effects"
+    - "Rendering"
+    - "Lighting"
+  link: "https://lemiric.artstation.com/"
+
+- name: "Motion Graphics & Animation"
+  description: "2D animation and motion graphics projects. Integration of 2D/3D systems for film production including pre-production, rendering, and post-production workflows. Creating concepts, storyboards, and final animations."
+  technologies:
+    - "Adobe After Effects"
+    - "Adobe Illustrator"
+    - "Blender"
+    - "Motion Design"
+    - "Compositing"
+  link: "https://lemiric.artstation.com/"

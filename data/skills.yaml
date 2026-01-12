@@ -1,0 +1,75 @@
+# By Proficiency
+proficiency:
+  - category: "Daily Drivers"
+    icon: "⚡"
+    description: "Technologies I reach for first"
+    skills:
+      - "Blender"
+      - "Unreal Engine 5"
+      - "Adobe Photoshop"
+      - "Adobe Illustrator"
+      - "3D Modeling"
+      - "Texturing"
+
+  - category: "Battle-Tested"
+    icon: "🛡️"
+    description: "Shipped production work with these"
+    skills:
+      - "Adobe InDesign"
+      - "Adobe After Effects"
+      - "Figma"
+      - "CorelDRAW"
+      - "WordPress"
+      - "3D Animation"
+
+  - category: "In The Toolkit"
+    icon: "🧰"
+    description: "Comfortable picking these up"
+    skills:
+      - "C#"
+      - "HTML/CSS"
+      - "PHP"
+      - "MySQL"
+      - "Audacity"
+      - "Tree It"
+      - "FreeCAD"
+      - "Android Studio"
+
+# By What I Build
+domains:
+  - category: "3D & Game Development"
+    color: "text-purple-400"
+    skills:
+      - "Blender"
+      - "Unreal Engine 5"
+      - "3D Modeling"
+      - "3D Animation"
+      - "Texturing & Shading"
+      - "Level Design"
+
+  - category: "Graphic Design"
+    color: "text-pink-400"
+    skills:
+      - "Adobe Illustrator"
+      - "Adobe Photoshop"
+      - "Adobe InDesign"
+      - "CorelDRAW"
+      - "Print Production"
+
+  - category: "Motion & Video"
+    color: "text-blue-400"
+    skills:
+      - "Adobe After Effects"
+      - "2D Animation"
+      - "Motion Graphics"
+      - "Video Editing"
+      - "Audacity"
+
+  - category: "UI/UX & Web"
+    color: "text-green-400"
+    skills:
+      - "Figma"
+      - "WordPress"
+      - "HTML/CSS"
+      - "PHP"
+      - "UI Design"

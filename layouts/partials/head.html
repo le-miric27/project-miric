@@ -1,0 +1,191 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+<meta name="description"
+  content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+<meta name="author" content="Leonardo Mirić">
+
+<!-- Keywords -->
+<meta name="keywords" content="Leonardo Mirić, lemiric, 3D Artist, Game Developer, Blender, Unreal Engine 5, Croatia{{ with .Keywords }}, {{ delimit . ", " }}{{ end }}">
+
+<!-- Language and Region -->
+<meta name="language" content="English">
+<meta name="geo.region" content="HR">
+<meta name="geo.placename" content="Koprivnica, Croatia">
+<meta name="revisit-after" content="7 days">
+<meta name="robots" content="index, follow">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="{{ "assets/profile.svg" | relURL }}">
+<link rel="apple-touch-icon" href="{{ "assets/profile.svg" | relURL }}">
+
+<!-- Open Graph / Social Media Meta Tags -->
+<meta property="og:title"
+  content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:description"
+  content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+<meta property="og:image" content="{{ .Site.BaseURL }}assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title"
+  content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+<meta name="twitter:description"
+  content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}">
+<meta name="twitter:image" content="{{ .Site.BaseURL }}assets/og-image.jpg">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- RSS Feed -->
+{{ range .AlternativeOutputFormats -}}
+{{ printf `
+<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+{{ end -}}
+
+<!-- Preconnect for Performance -->
+<link rel="preconnect" href="https://cdn.tailwindcss.com">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+<!-- Latest Tailwind directly from CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          // Custom colors if needed
+        }
+      }
+    }
+  }
+</script>
+
+<!-- Custom CSS -->
+<link href="{{ "css/tailwind.css" | relURL }}" rel="stylesheet">
+
+<!-- Custom CSS variables for theme switching -->
+<style>
+  /* Dark mode styles */
+  html.dark {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+
+  html.dark body {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+
+  /* Additional custom styles */
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark .bg-white {
+    background-color: #1f2937 !important;
+  }
+
+  .dark .text-gray-900 {
+    color: #f3f4f6 !important;
+  }
+
+  .dark .bg-gray-100 {
+    background-color: #374151 !important;
+  }
+
+  .dark .bg-gray-50 {
+    background-color: #1f2937 !important;
+  }
+
+  .dark .text-gray-700,
+  .dark .text-gray-600 {
+    color: #d1d5db !important;
+  }
+</style>
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Prism.js for code highlighting -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+
+<!-- MermaidJS for diagrams -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Mermaid with theme based on dark mode
+    const isDark = document.documentElement.classList.contains('dark');
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: isDark ? 'dark' : 'default',
+      securityLevel: 'loose',
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true
+      }
+    });
+
+    // Re-run Prism highlighting for any code blocks Hugo didn't highlight
+    if (typeof Prism !== 'undefined') {
+      Prism.highlightAll();
+    }
+  });
+</script>
+
+<!-- Custom code block styling -->
+<style>
+  /* Code block styling */
+  pre[class*="language-"],
+  .prose pre {
+    background-color: #2d2d2d !important;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+
+  .prose code {
+    background-color: #374151;
+    color: #ffffff;
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.25rem;
+    font-size: 0.875em;
+  }
+
+  .prose pre code {
+    background-color: transparent;
+    padding: 0;
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+
+  /* Mermaid diagram container */
+  .mermaid {
+    background-color: transparent !important;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .dark .mermaid {
+    background-color: transparent !important;
+  }
+</style>
+
+<!-- Structured Data (JSON-LD) -->
+{{ if .IsHome }}
+{{ partial "schema-person.html" . }}
+{{ partial "schema-website.html" . }}
+{{ else }}
+{{ partial "schema-article.html" . }}
+{{ end }}

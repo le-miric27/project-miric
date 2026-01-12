@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <title>Architecture | Leonardo Miric | Full-Stack Developer</title>
+  <meta name=description content="Full-Stack Developer & Tech Enthusiast">
+  <meta name=author content="Leonardo Mirić">
+  <meta name=keywords content="Leonardo Mirić,leo-miric,Full-Stack Developer,Web Developer,Software Engineer,Croatia">
+  <meta name=language content="English">
+  <meta name=geo.region content="HR">
+  <meta name=geo.placename content="Koprivnica, Croatia">
+  <meta name=revisit-after content="7 days">
+  <meta name=robots content="index, follow">
+  <link rel=icon type=image/svg+xml href=/assets/leo-miric.jpeg>
+  <link rel=apple-touch-icon href=/assets/leo-miric.jpeg>
+  <meta property="og:title" content="Architecture | Leonardo Miric | Full-Stack Developer">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://le-miric27.github.io/project-miric/tags/architecture/">
+  <meta property="og:description" content="Full-Stack Developer & Tech Enthusiast">
+  <meta property="og:image" content="https://le-miric27.github.io/project-miric/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name=twitter:card content="summary_large_image">
+  <meta name=twitter:title content="Architecture | Leonardo Miric | Full-Stack Developer">
+  <meta name=twitter:description content="Full-Stack Developer & Tech Enthusiast">
+  <meta name=twitter:image content="https://le-miric27.github.io/project-miric/assets/og-image.jpg">
+  <link rel=canonical href=https://le-miric27.github.io/project-miric/tags/architecture />
+  <link rel=alternate type=application/rss+xml
+    href=https://le-miric27.github.io/project-miric/tags/architecture/index.xml
+    title="Leonardo Miric | Full-Stack Developer">
+  <link rel=preconnect href=https://cdn.tailwindcss.com>
+  <link rel=preconnect href=https://cdnjs.cloudflare.com>
+  <link rel=dns-prefetch href=https://cdn.tailwindcss.com>
+  <link rel=dns-prefetch href=https://cdnjs.cloudflare.com>
+  <script src=https://cdn.tailwindcss.com></script>
+  <script>tailwind.config = { darkMode: "class", theme: { extend: { colors: {} } } }</script>
+  <link href=/css/tailwind.css rel=stylesheet>
+  <style>
+    html.dark {
+      background-color: #111827;
+      color: #f9fafb
+    }
+
+    html.dark body {
+      background-color: #111827;
+      color: #f9fafb
+    }
+
+    body {
+      transition: background-color .3s ease, color .3s ease
+    }
+
+    .dark .bg-white {
+      background-color: #1f2937 !important
+    }
+
+    .dark .text-gray-900 {
+      color: #f3f4f6 !important
+    }
+
+    .dark .bg-gray-100 {
+      background-color: #374151 !important
+    }
+
+    .dark .bg-gray-50 {
+      background-color: #1f2937 !important
+    }
+
+    .dark .text-gray-700,
+    .dark .text-gray-600 {
+      color: #d1d5db !important
+    }
+  </style>
+  <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css>
+  <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js></script>
+  <script src=https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js></script>
+  <script src=https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js></script>
+  <script>document.addEventListener("DOMContentLoaded", function () { const e = document.documentElement.classList.contains("dark"); mermaid.initialize({ startOnLoad: !0, theme: e ? "dark" : "default", securityLevel: "loose", flowchart: { useMaxWidth: !0, htmlLabels: !0 } }), typeof Prism != "undefined" && Prism.highlightAll() })</script>
+  <style>
+    pre[class*=language-],
+    .prose pre {
+      background-color: #2d2d2d !important;
+      border-radius: .5rem;
+      padding: 1rem;
+      overflow-x: auto;
+      margin: 1.5rem 0
+    }
+
+    .prose code {
+      background-color: #374151;
+      color: #fff;
+      padding: .2rem .4rem;
+      border-radius: .25rem;
+      font-size: .875em
+    }
+
+    .prose pre code {
+      background-color: initial;
+      padding: 0;
+      font-size: .875rem;
+      line-height: 1.7
+    }
+
+    .mermaid {
+      background-color: initial !important;
+      text-align: center;
+      margin: 2rem 0
+    }
+
+    .dark .mermaid {
+      background-color: initial !important
+    }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+  <div class="flex flex-col min-h-screen">
+    <header class="bg-gray-100 dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4"><a href=/
+            class="text-gray-900 dark:text-white flex items-center"><span class="font-bold text-lg">Leonardo Miric <span
+                class=text-blue-500>{dev}</span></span></a>
+          <nav class="hidden md:flex items-center space-x-8"><a href=/
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition duration-300">Home
+            </a><a href=/cv/
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition duration-300">CV
+            </a><a href=/blog/
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition duration-300">Blog
+            </a><a href=/contact/
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition duration-300">Contact
+            </a><button id=themeToggle
+              class="ml-4 text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300">
+              <svg class="h-5 w-5 hidden dark:block" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 2a1 1 0 011 1v1A1 1 0 119 4V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707A1 1 0 1113.536 5.05l.707-.707a1 1 0 011.414.0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707A1 1 0 004.343 5.757l.707.707zm1.414 8.486-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg class="h-5 w-5 block dark:hidden" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001.0 1010.586 10.586z" />
+              </svg>
+            </button>
+            <a href=/contact class=ml-4>
+              <div class="w-8 h-8 rounded-full bg-gray-300 dark:bg-gray-600 overflow-hidden"><img
+                  src=/assets/leo-miric.jpeg alt="Leonardo Miric" class="w-full h-full object-cover"></div>
+            </a>
+          </nav><button id=mobileMenuButton class="md:hidden text-gray-700 dark:text-gray-300 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg></button>
+        </div>
+        <div id=mobileMenu class="md:hidden hidden py-4">
+          <nav class="flex flex-col space-y-4"><a href=/
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition duration-300">Home
+            </a><a href=/cv/
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition duration-300">CV
+            </a><a href=/blog/
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition duration-300">Blog
+            </a><a href=/contact/
+              class="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 font-medium transition duration-300">Contact
+            </a><button id=mobileThemeToggle
+              class="text-left text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300 flex items-center">
+              <span class=mr-2>Toggle Theme</span>
+              <svg class="h-5 w-5 hidden dark:block" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 2a1 1 0 011 1v1A1 1 0 119 4V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707A1 1 0 1113.536 5.05l.707-.707a1 1 0 011.414.0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707A1 1 0 004.343 5.757l.707.707zm1.414 8.486-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  clip-rule="evenodd" />
+              </svg>
+              <svg class="h-5 w-5 block dark:hidden" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001.0 1010.586 10.586z" />
+              </svg></button></nav>
+        </div>
+      </div>
+    </header>
+    <script>const mobileMenuButton = document.getElementById("mobileMenuButton"), mobileMenu = document.getElementById("mobileMenu"); mobileMenuButton.addEventListener("click", () => { mobileMenu.classList.toggle("hidden") })</script>
+    <main class=flex-grow>
+      <div class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+          <h1 class="text-4xl font-bold mb-8 dark:text-white">Architecture</h1>
+          <div class=space-y-8>
+            <div class="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-lg transition duration-300">
+              <h2 class="text-2xl font-bold mb-2 dark:text-white"><a
+                  href=https://le-miric27.github.io/project-miric/blog/example-post/
+                  class="hover:text-blue-500 dark:hover:text-blue-400">Understanding Modern Web Architecture</a></h2>
+              <div class="flex items-center text-sm text-gray-600 dark:text-gray-400 mb-4"><span>July 27, 2023</span>
+                <span class=mx-2>•</span>
+                <span>Web Development</span>
+              </div>
+              <p class="text-gray-700 dark:text-gray-300 mb-4">Exploring the principles of modern web architecture and
+                best practices for scalable applications</p><a
+                href=https://le-miric27.github.io/project-miric/blog/example-post/
+                class="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 font-medium inline-flex items-center">Read
+                more
+                <svg class="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M10.293 5.293a1 1 0 011.414.0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-gray-100 dark:bg-gray-800 py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0"><a href=/ class="text-gray-900 dark:text-white flex items-center"><span
+                class="font-bold text-lg">Leonardo Miric <span class=text-blue-500>{dev}</span></span></a></div>
+          <div class="flex items-center space-x-4">
+            <div class="flex space-x-4"><a href=https://github.com/leo-miric target=_blank rel=noopener
+                aria-label=GitHub
+                class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition duration-300"><svg
+                  class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.374.0.0 5.373.0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931.0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176.0.0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221.0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+                </svg>
+              </a><a href=https://www.linkedin.com/in/jakov-filip-saboli%C4%8Dek-ba2933222/ target=_blank rel=noopener
+                aria-label=LinkedIn
+                class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition duration-300"><svg
+                  class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0H5C2.239.0.0 2.239.0 5v14c0 2.761 2.239 5 5 5h14c2.762.0 5-2.239 5-5V5c0-2.761-2.238-5-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966.0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z" />
+                </svg>
+              </a><a href=mailto:leo-miric@gmail.com aria-label=Email
+                class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition duration-300"><svg
+                  class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22.0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5A2 2 0 003 7v10a2 2 0 002 2z" />
+                </svg></a></div>
+          </div>
+        </div>
+        <div
+          class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700 text-center text-sm text-gray-600 dark:text-gray-400">
+          &copy; 2026 Leonardo Miric. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+  <script src=/js/theme.js></script>
+</body>
+
+</html>
