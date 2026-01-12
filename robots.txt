@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://le-miric27.github.io/project-miric/sitemap.xml
+
+Crawl-delay: 1
