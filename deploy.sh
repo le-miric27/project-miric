@@ -22,7 +22,7 @@ git commit -m "Deploy Hugo site to GitHub Pages" || echo "No changes to commit"
 # Push the contents of the public directory to the gh-pages branch of your remote repository.
 # The `git push -f` is important here as it overwrites the gh-pages branch with the
 # content of your local 'public' directory.
-git push -f "https://github.com/le-miric27/project-miric.git" master:gh-pages
+git push -f "https://github.com/le-miric27/project-miric.git" HEAD:gh-pages
 
 # Come back to the root of your project
 cd ..
