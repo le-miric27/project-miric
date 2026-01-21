@@ -6,3 +6,9 @@ coverage
 .vscode
 .idea
 *.log
+
+# Hugo build output
+/public
+
+# Source assets (copied to static/)
+/project-assets
