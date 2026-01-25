@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="gameBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f3460"/>
+    </linearGradient>
+    <linearGradient id="controllerBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d3d3d"/>
+      <stop offset="50%" style="stop-color:#2d2d2d"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88"/>
+      <stop offset="100%" style="stop-color:#00aa55"/>
+    </linearGradient>
+    <linearGradient id="buttonRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b6b"/>
+      <stop offset="100%" style="stop-color:#c92a2a"/>
+    </linearGradient>
+    <linearGradient id="buttonBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#339af0"/>
+      <stop offset="100%" style="stop-color:#1864ab"/>
+    </linearGradient>
+    <linearGradient id="buttonGreen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#51cf66"/>
+      <stop offset="100%" style="stop-color:#2f9e44"/>
+    </linearGradient>
+    <linearGradient id="buttonYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd43b"/>
+      <stop offset="100%" style="stop-color:#fab005"/>
+    </linearGradient>
+    <filter id="neonGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="screenGlowFilter">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#gameBg)"/>
+
+  <!-- Grid pattern -->
+  <g stroke="#1e90ff" stroke-width="1" opacity="0.1">
+    <line x1="0" y1="50" x2="1200" y2="50"/>
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="250" x2="1200" y2="250"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="350" x2="1200" y2="350"/>
+    <line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="500" y1="0" x2="500" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+    <line x1="700" y1="0" x2="700" y2="400"/>
+    <line x1="800" y1="0" x2="800" y2="400"/>
+    <line x1="900" y1="0" x2="900" y2="400"/>
+    <line x1="1000" y1="0" x2="1000" y2="400"/>
+    <line x1="1100" y1="0" x2="1100" y2="400"/>
+  </g>
+
+  <!-- Floating game elements - left side -->
+  <!-- Coin -->
+  <g transform="translate(100, 80)" filter="url(#neonGlow)">
+    <ellipse cx="30" cy="30" rx="25" ry="25" fill="#ffd43b"/>
+    <ellipse cx="30" cy="30" rx="18" ry="18" fill="#fab005"/>
+    <text x="30" y="38" font-size="24" font-weight="bold" fill="#ffd43b" text-anchor="middle" font-family="Arial">$</text>
+  </g>
+
+  <!-- Heart/life -->
+  <g transform="translate(180, 280)" filter="url(#neonGlow)">
+    <path d="M25 15 C25 5 35 0 40 0 C50 0 55 10 55 15 C55 30 40 45 40 45 C40 45 25 30 25 15" fill="#ff6b6b"/>
+    <path d="M30 15 C30 10 35 7 38 7 C43 7 47 12 47 15 C47 22 38 32 38 32 C38 32 30 22 30 15" fill="#ff8787" opacity="0.5"/>
+  </g>
+
+  <!-- Star -->
+  <g transform="translate(80, 200)" filter="url(#neonGlow)">
+    <polygon points="25,0 31,18 50,18 35,30 41,48 25,37 9,48 15,30 0,18 19,18" fill="#ffd43b"/>
+    <polygon points="25,8 29,20 40,20 31,28 35,40 25,33 15,40 19,28 10,20 21,20" fill="#ffe066" opacity="0.6"/>
+  </g>
+
+  <!-- Game controller - center -->
+  <g transform="translate(400, 120)">
+    <!-- Controller body -->
+    <path d="M50 80 Q0 80 0 130 Q0 180 50 180 L80 180 L100 220 Q110 240 130 240 L270 240 Q290 240 300 220 L320 180 L350 180 Q400 180 400 130 Q400 80 350 80 Z" fill="url(#controllerBody)"/>
+
+    <!-- Left grip -->
+    <ellipse cx="50" cy="130" rx="40" ry="50" fill="#2d2d2d"/>
+    <!-- Right grip -->
+    <ellipse cx="350" cy="130" rx="40" ry="50" fill="#2d2d2d"/>
+
+    <!-- D-pad -->
+    <g transform="translate(60, 100)">
+      <rect x="15" y="0" width="20" height="50" rx="3" fill="#1a1a1a"/>
+      <rect x="0" y="15" width="50" height="20" rx="3" fill="#1a1a1a"/>
+      <rect x="17" y="2" width="16" height="46" rx="2" fill="#2a2a2a"/>
+      <rect x="2" y="17" width="46" height="16" rx="2" fill="#2a2a2a"/>
+    </g>
+
+    <!-- Action buttons -->
+    <g transform="translate(280, 90)">
+      <!-- Y button - top -->
+      <circle cx="35" cy="10" r="15" fill="url(#buttonYellow)"/>
+      <text x="35" y="15" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial">Y</text>
+      <!-- X button - left -->
+      <circle cx="10" cy="35" r="15" fill="url(#buttonBlue)"/>
+      <text x="10" y="40" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial">X</text>
+      <!-- B button - right -->
+      <circle cx="60" cy="35" r="15" fill="url(#buttonRed)"/>
+      <text x="60" y="40" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial">B</text>
+      <!-- A button - bottom -->
+      <circle cx="35" cy="60" r="15" fill="url(#buttonGreen)"/>
+      <text x="35" y="65" font-size="14" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial">A</text>
+    </g>
+
+    <!-- Analog sticks -->
+    <g transform="translate(120, 140)">
+      <circle cx="0" cy="0" r="25" fill="#1a1a1a"/>
+      <circle cx="0" cy="0" r="20" fill="#3d3d3d"/>
+      <circle cx="0" cy="0" r="15" fill="#2d2d2d"/>
+    </g>
+    <g transform="translate(240, 170)">
+      <circle cx="0" cy="0" r="25" fill="#1a1a1a"/>
+      <circle cx="0" cy="0" r="20" fill="#3d3d3d"/>
+      <circle cx="0" cy="0" r="15" fill="#2d2d2d"/>
+    </g>
+
+    <!-- Center buttons -->
+    <rect x="170" y="110" width="25" height="12" rx="3" fill="#1a1a1a"/>
+    <rect x="205" y="110" width="25" height="12" rx="3" fill="#1a1a1a"/>
+
+    <!-- Home button -->
+    <circle cx="200" cy="145" r="12" fill="#1a1a1a"/>
+    <circle cx="200" cy="145" r="8" fill="#3d3d3d"/>
+
+    <!-- LED indicator -->
+    <circle cx="200" cy="95" r="4" fill="#00ff88" filter="url(#neonGlow)"/>
+  </g>
+
+  <!-- Floating game elements - right side -->
+  <!-- Power-up box -->
+  <g transform="translate(950, 100)">
+    <rect x="0" y="0" width="50" height="50" rx="5" fill="#8b5a2b" stroke="#ffd43b" stroke-width="3"/>
+    <text x="25" y="35" font-size="28" fill="#ffd43b" text-anchor="middle" font-family="Arial">?</text>
+  </g>
+
+  <!-- Gem/crystal -->
+  <g transform="translate(1050, 250)" filter="url(#neonGlow)">
+    <polygon points="25,0 50,20 40,50 10,50 0,20" fill="#339af0"/>
+    <polygon points="25,5 42,20 35,45 15,45 8,20" fill="#74c0fc" opacity="0.5"/>
+    <line x1="25" y1="5" x2="25" y2="45" stroke="#a5d8ff" stroke-width="2" opacity="0.3"/>
+  </g>
+
+  <!-- Game character silhouette -->
+  <g transform="translate(1000, 300)">
+    <!-- Simple running character -->
+    <circle cx="30" cy="20" r="15" fill="#ff922b"/>
+    <rect x="20" y="35" width="20" height="30" rx="5" fill="#ff922b"/>
+    <rect x="10" y="45" width="12" height="8" rx="2" fill="#ff922b" transform="rotate(-30, 16, 49)"/>
+    <rect x="38" y="45" width="12" height="8" rx="2" fill="#ff922b" transform="rotate(30, 44, 49)"/>
+    <rect x="18" y="65" width="8" height="20" rx="2" fill="#ff922b" transform="rotate(-15, 22, 75)"/>
+    <rect x="34" y="65" width="8" height="20" rx="2" fill="#ff922b" transform="rotate(15, 38, 75)"/>
+  </g>
+
+  <!-- Pixel art decorations -->
+  <g fill="#1e90ff" opacity="0.3">
+    <!-- Left pixels -->
+    <rect x="50" y="350" width="10" height="10"/>
+    <rect x="60" y="340" width="10" height="10"/>
+    <rect x="70" y="350" width="10" height="10"/>
+    <rect x="60" y="360" width="10" height="10"/>
+
+    <!-- Right pixels -->
+    <rect x="1100" y="50" width="10" height="10"/>
+    <rect x="1110" y="40" width="10" height="10"/>
+    <rect x="1120" y="50" width="10" height="10"/>
+    <rect x="1110" y="60" width="10" height="10"/>
+  </g>
+
+  <!-- Speed lines -->
+  <g stroke="#00ff88" stroke-width="2" opacity="0.3">
+    <line x1="0" y1="180" x2="80" y2="180"/>
+    <line x1="0" y1="200" x2="60" y2="200"/>
+    <line x1="0" y1="220" x2="100" y2="220"/>
+    <line x1="1120" y1="180" x2="1200" y2="180"/>
+    <line x1="1140" y1="200" x2="1200" y2="200"/>
+    <line x1="1100" y1="220" x2="1200" y2="220"/>
+  </g>
+
+  <!-- Floating particles -->
+  <g fill="#00ff88" opacity="0.5">
+    <circle cx="300" cy="60" r="3"/>
+    <circle cx="500" cy="350" r="2"/>
+    <circle cx="700" cy="50" r="3"/>
+    <circle cx="900" cy="350" r="2"/>
+    <circle cx="250" cy="150" r="2"/>
+    <circle cx="950" cy="180" r="3"/>
+  </g>
+</svg>

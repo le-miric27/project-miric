@@ -62,7 +62,44 @@
     theme: {
       extend: {
         colors: {
-          // Custom colors if needed
+          // Custom color palette
+          cream: {
+            50: '#FDFFF8',
+            100: '#F8FFE5', // Light Yellow - light bg
+            200: '#f0f7d8',
+            300: '#e5f0c5',
+          },
+          mint: {
+            50: '#e8fbee',
+            100: '#c5f5d3',
+            200: '#a0efb8',
+            300: '#7DDE92', // Light Green - primary
+            400: '#5fd47a',
+            500: '#42c862',
+            600: '#35a852',
+            700: '#2a8842',
+          },
+          ocean: {
+            300: '#5fd4bf',
+            400: '#2EBFA5', // Ocean Mist - secondary
+            500: '#26a08a',
+            600: '#1f8170',
+            700: '#186256',
+          },
+          azure: {
+            300: '#5ca3e8',
+            400: '#3083DC', // Brilliant Azure
+            500: '#2669b3',
+            600: '#1d508a',
+            700: '#153861',
+          },
+          grape: {
+            600: '#5c4f99',
+            700: '#4E4187', // Dusty Grape - dark bg
+            800: '#3e3470',
+            900: '#2e2759',
+            950: '#1f1a42',
+          }
         }
       }
     }
@@ -74,15 +111,15 @@
 
 <!-- Custom CSS variables for theme switching -->
 <style>
-  /* Dark mode styles */
+  /* Dark mode styles using Dusty Grape palette */
   html.dark {
-    background-color: #111827;
-    color: #f9fafb;
+    background-color: #4E4187;
+    color: #F8FFE5;
   }
 
   html.dark body {
-    background-color: #111827;
-    color: #f9fafb;
+    background-color: #4E4187;
+    color: #F8FFE5;
   }
 
   /* Additional custom styles */
@@ -91,24 +128,24 @@
   }
 
   .dark .bg-white {
-    background-color: #1f2937 !important;
+    background-color: #5c4f99 !important;
   }
 
   .dark .text-gray-900 {
-    color: #f3f4f6 !important;
+    color: #F8FFE5 !important;
   }
 
   .dark .bg-gray-100 {
-    background-color: #374151 !important;
+    background-color: #5c4f99 !important;
   }
 
   .dark .bg-gray-50 {
-    background-color: #1f2937 !important;
+    background-color: #5c4f99 !important;
   }
 
   .dark .text-gray-700,
   .dark .text-gray-600 {
-    color: #d1d5db !important;
+    color: #c5f5d3 !important;
   }
 </style>
 

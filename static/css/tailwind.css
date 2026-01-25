@@ -1,5 +1,29 @@
 /* Custom Tailwind CSS extensions */
 
+/* CSS Custom Properties for theme colors */
+:root {
+    --color-cream-100: #F8FFE5;
+    --color-cream-200: #f0f7d8;
+    --color-mint-300: #7DDE92;
+    --color-mint-400: #5fd47a;
+    --color-ocean-400: #2EBFA5;
+    --color-azure-400: #3083DC;
+    --color-grape-700: #4E4187;
+    --text-primary: #1f2937;
+    --text-secondary: #4b5563;
+    --bg-primary: #F8FFE5;
+    --bg-secondary: #f0f7d8;
+    --accent: #7DDE92;
+}
+
+.dark {
+    --text-primary: #F8FFE5;
+    --text-secondary: #c5f5d3;
+    --bg-primary: #4E4187;
+    --bg-secondary: #5c4f99;
+    --accent: #7DDE92;
+}
+
 /* Add additional styles not covered by Tailwind's utility classes */
 
 /* Typography enhancements */

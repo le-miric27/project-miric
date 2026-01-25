@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f0e8"/>
+      <stop offset="100%" style="stop-color:#e8e0d0"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b7355"/>
+      <stop offset="100%" style="stop-color:#6b5344"/>
+    </linearGradient>
+    <linearGradient id="windowLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff9e6"/>
+      <stop offset="100%" style="stop-color:#ffefc4"/>
+    </linearGradient>
+    <linearGradient id="sofaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a6741"/>
+      <stop offset="100%" style="stop-color:#3d5636"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background wall -->
+  <rect width="1200" height="400" fill="url(#wallGrad)"/>
+
+  <!-- Floor -->
+  <rect x="0" y="300" width="1200" height="100" fill="url(#floorGrad)"/>
+
+  <!-- Floor boards -->
+  <g stroke="#5a4434" stroke-width="1" opacity="0.3">
+    <line x1="0" y1="320" x2="1200" y2="320"/>
+    <line x1="0" y1="340" x2="1200" y2="340"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="380" x2="1200" y2="380"/>
+    <line x1="100" y1="300" x2="100" y2="400"/>
+    <line x1="250" y1="300" x2="250" y2="400"/>
+    <line x1="400" y1="300" x2="400" y2="400"/>
+    <line x1="550" y1="300" x2="550" y2="400"/>
+    <line x1="700" y1="300" x2="700" y2="400"/>
+    <line x1="850" y1="300" x2="850" y2="400"/>
+    <line x1="1000" y1="300" x2="1000" y2="400"/>
+    <line x1="1150" y1="300" x2="1150" y2="400"/>
+  </g>
+
+  <!-- Large window -->
+  <rect x="700" y="40" width="220" height="240" fill="#1a1a2e" rx="2"/>
+  <rect x="710" y="50" width="95" height="110" fill="url(#windowLight)"/>
+  <rect x="815" y="50" width="95" height="110" fill="url(#windowLight)"/>
+  <rect x="710" y="170" width="95" height="100" fill="url(#windowLight)"/>
+  <rect x="815" y="170" width="95" height="100" fill="url(#windowLight)"/>
+  <rect x="700" y="155" width="220" height="20" fill="#1a1a2e"/>
+  <rect x="805" y="40" width="10" height="240" fill="#1a1a2e"/>
+
+  <!-- Window curtains -->
+  <path d="M680 30 Q660 150 680 280 L700 280 L700 30 Z" fill="#c9a959" opacity="0.8"/>
+  <path d="M940 30 Q960 150 940 280 L920 280 L920 30 Z" fill="#c9a959" opacity="0.8"/>
+
+  <!-- Light rays from window -->
+  <polygon points="920,280 1100,400 700,400 700,280" fill="#fff9e6" opacity="0.15"/>
+
+  <!-- Sofa -->
+  <rect x="80" y="200" width="400" height="100" rx="10" fill="url(#sofaGrad)"/>
+  <rect x="80" y="180" width="400" height="30" rx="8" fill="#3d5636"/>
+  <!-- Sofa back -->
+  <rect x="70" y="140" width="30" height="160" rx="8" fill="#3d5636"/>
+  <rect x="470" y="140" width="30" height="160" rx="8" fill="#3d5636"/>
+  <!-- Cushions -->
+  <ellipse cx="180" cy="230" rx="60" ry="30" fill="#557a4a"/>
+  <ellipse cx="280" cy="230" rx="60" ry="30" fill="#557a4a"/>
+  <ellipse cx="380" cy="230" rx="60" ry="30" fill="#557a4a"/>
+  <!-- Throw pillows -->
+  <rect x="100" y="170" width="50" height="40" rx="5" fill="#d4a574" transform="rotate(-10, 125, 190)"/>
+  <rect x="420" y="170" width="50" height="40" rx="5" fill="#c9a959" transform="rotate(10, 445, 190)"/>
+
+  <!-- Coffee table -->
+  <rect x="200" y="310" width="180" height="15" rx="2" fill="#2d2d2d"/>
+  <rect x="210" y="325" width="5" height="50" fill="#2d2d2d"/>
+  <rect x="365" y="325" width="5" height="50" fill="#2d2d2d"/>
+  <!-- Items on table -->
+  <ellipse cx="260" cy="305" rx="25" ry="8" fill="#87ceeb" opacity="0.6"/>
+  <rect x="310" y="295" width="40" height="20" rx="2" fill="#8b4513"/>
+
+  <!-- Floor lamp -->
+  <rect x="540" y="180" width="8" height="120" fill="#2d2d2d"/>
+  <ellipse cx="544" cy="180" rx="40" ry="25" fill="#f5e6c8"/>
+  <ellipse cx="544" cy="180" rx="35" ry="20" fill="#fff9e6"/>
+  <circle cx="544" cy="165" r="3" fill="#ffd700" opacity="0.8"/>
+  <circle cx="544" cy="300" r="20" fill="#2d2d2d"/>
+
+  <!-- Wall art -->
+  <rect x="180" y="60" width="150" height="100" fill="#2d2d2d"/>
+  <rect x="185" y="65" width="140" height="90" fill="#1a1a2e"/>
+  <!-- Abstract art inside frame -->
+  <circle cx="230" cy="100" r="20" fill="#c9a959" opacity="0.7"/>
+  <circle cx="280" cy="120" r="25" fill="#4a6741" opacity="0.6"/>
+  <rect x="200" y="95" width="80" height="3" fill="#d4a574" transform="rotate(15, 240, 96)"/>
+
+  <!-- Plant in corner -->
+  <ellipse cx="1050" cy="350" rx="35" ry="20" fill="#3d3d3d"/>
+  <path d="M1050 350 Q1030 300 1020 280 Q1040 290 1050 270 Q1060 290 1080 280 Q1070 300 1050 350" fill="#4a6741"/>
+  <path d="M1050 320 Q1070 280 1090 260" stroke="#4a6741" stroke-width="3" fill="none"/>
+  <path d="M1050 320 Q1030 280 1010 250" stroke="#4a6741" stroke-width="3" fill="none"/>
+  <path d="M1050 330 Q1050 290 1050 240" stroke="#557a4a" stroke-width="3" fill="none"/>
+  <ellipse cx="1090" cy="260" rx="15" ry="8" fill="#557a4a" transform="rotate(30, 1090, 260)"/>
+  <ellipse cx="1010" cy="250" rx="15" ry="8" fill="#557a4a" transform="rotate(-30, 1010, 250)"/>
+  <ellipse cx="1050" cy="240" rx="12" ry="7" fill="#4a6741"/>
+
+  <!-- Side table with lamp -->
+  <rect x="500" y="280" width="60" height="20" rx="2" fill="#8b7355"/>
+  <rect x="520" y="230" width="4" height="50" fill="#c9a959"/>
+  <ellipse cx="522" cy="230" rx="20" ry="12" fill="#f5e6c8"/>
+
+  <!-- Rug under coffee table -->
+  <ellipse cx="290" cy="350" rx="150" ry="40" fill="#c9a959" opacity="0.4"/>
+  <ellipse cx="290" cy="350" rx="120" ry="30" fill="#d4a574" opacity="0.3"/>
+</svg>

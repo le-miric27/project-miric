@@ -2,7 +2,6 @@
 title: "Baba Yaga"
 description: "3D animated short film featuring the iconic Baba Yaga house. Complete environment design with stylized forest assets including custom trees and rocks."
 thumbnail: "/assets/projects/baba-yaga/Baba_YagaYHouse.png"
-videoUrl: "/assets/projects/baba-yaga/baba_Yaga_A_Movie.mp4"
 youtubeUrl: "https://youtu.be/bg9ENRFbums"
 technologies:
   - "Blender"

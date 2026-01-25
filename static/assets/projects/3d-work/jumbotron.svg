@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bgGrad3d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="50%" style="stop-color:#16213e"/>
+      <stop offset="100%" style="stop-color:#0f0f1a"/>
+    </linearGradient>
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b68ee"/>
+      <stop offset="100%" style="stop-color:#6a5acd"/>
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#483d8b"/>
+      <stop offset="100%" style="stop-color:#5a4fcf"/>
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#9370db"/>
+      <stop offset="100%" style="stop-color:#8060d0"/>
+    </linearGradient>
+    <linearGradient id="wireGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff"/>
+      <stop offset="100%" style="stop-color:#0080ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bgGrad3d)"/>
+
+  <!-- Grid floor -->
+  <g stroke="#304060" stroke-width="1" opacity="0.5">
+    <!-- Horizontal lines with perspective -->
+    <line x1="0" y1="350" x2="1200" y2="350"/>
+    <line x1="0" y1="370" x2="1200" y2="370"/>
+    <line x1="0" y1="390" x2="1200" y2="390"/>
+    <line x1="100" y1="330" x2="1100" y2="330"/>
+    <line x1="200" y1="310" x2="1000" y2="310"/>
+    <!-- Vertical lines converging -->
+    <line x1="600" y1="200" x2="0" y2="400"/>
+    <line x1="600" y1="200" x2="150" y2="400"/>
+    <line x1="600" y1="200" x2="300" y2="400"/>
+    <line x1="600" y1="200" x2="450" y2="400"/>
+    <line x1="600" y1="200" x2="600" y2="400"/>
+    <line x1="600" y1="200" x2="750" y2="400"/>
+    <line x1="600" y1="200" x2="900" y2="400"/>
+    <line x1="600" y1="200" x2="1050" y2="400"/>
+    <line x1="600" y1="200" x2="1200" y2="400"/>
+  </g>
+
+  <!-- Main 3D Cube - Center -->
+  <g transform="translate(500, 100)">
+    <!-- Top face -->
+    <polygon points="100,0 200,50 100,100 0,50" fill="url(#cubeTop)"/>
+    <!-- Left face -->
+    <polygon points="0,50 100,100 100,200 0,150" fill="url(#cubeLeft)"/>
+    <!-- Right face -->
+    <polygon points="100,100 200,50 200,150 100,200" fill="url(#cubeRight)"/>
+    <!-- Wireframe edges -->
+    <g stroke="url(#wireGlow)" stroke-width="2" fill="none" opacity="0.8">
+      <polygon points="100,0 200,50 100,100 0,50"/>
+      <line x1="0" y1="50" x2="0" y2="150"/>
+      <line x1="100" y1="100" x2="100" y2="200"/>
+      <line x1="200" y1="50" x2="200" y2="150"/>
+      <line x1="0" y1="150" x2="100" y2="200"/>
+      <line x1="100" y1="200" x2="200" y2="150"/>
+    </g>
+  </g>
+
+  <!-- Smaller cube - Left -->
+  <g transform="translate(150, 180) scale(0.6)">
+    <polygon points="100,0 200,50 100,100 0,50" fill="#ff6b6b" opacity="0.8"/>
+    <polygon points="0,50 100,100 100,200 0,150" fill="#c92a2a"/>
+    <polygon points="100,100 200,50 200,150 100,200" fill="#fa5252"/>
+    <g stroke="#ff8787" stroke-width="2" fill="none" opacity="0.6">
+      <polygon points="100,0 200,50 100,100 0,50"/>
+      <line x1="0" y1="50" x2="0" y2="150"/>
+      <line x1="100" y1="100" x2="100" y2="200"/>
+      <line x1="200" y1="50" x2="200" y2="150"/>
+    </g>
+  </g>
+
+  <!-- Smaller cube - Right -->
+  <g transform="translate(900, 150) scale(0.5)">
+    <polygon points="100,0 200,50 100,100 0,50" fill="#51cf66" opacity="0.8"/>
+    <polygon points="0,50 100,100 100,200 0,150" fill="#2f9e44"/>
+    <polygon points="100,100 200,50 200,150 100,200" fill="#69db7c"/>
+    <g stroke="#8ce99a" stroke-width="2" fill="none" opacity="0.6">
+      <polygon points="100,0 200,50 100,100 0,50"/>
+      <line x1="0" y1="50" x2="0" y2="150"/>
+      <line x1="100" y1="100" x2="100" y2="200"/>
+      <line x1="200" y1="50" x2="200" y2="150"/>
+    </g>
+  </g>
+
+  <!-- Sphere wireframe - Right side -->
+  <g transform="translate(1000, 120)">
+    <circle cx="60" cy="60" r="50" fill="none" stroke="#ffd43b" stroke-width="1.5" opacity="0.6"/>
+    <ellipse cx="60" cy="60" rx="50" ry="20" fill="none" stroke="#ffd43b" stroke-width="1" opacity="0.4"/>
+    <ellipse cx="60" cy="60" rx="35" ry="50" fill="none" stroke="#ffd43b" stroke-width="1" opacity="0.4"/>
+    <ellipse cx="60" cy="60" rx="50" ry="35" fill="none" stroke="#ffd43b" stroke-width="1" opacity="0.4" transform="rotate(45, 60, 60)"/>
+    <ellipse cx="60" cy="60" rx="50" ry="35" fill="none" stroke="#ffd43b" stroke-width="1" opacity="0.4" transform="rotate(-45, 60, 60)"/>
+  </g>
+
+  <!-- Cylinder wireframe - Left side -->
+  <g transform="translate(50, 80)">
+    <ellipse cx="50" cy="20" rx="40" ry="15" fill="none" stroke="#ff922b" stroke-width="1.5" opacity="0.6"/>
+    <ellipse cx="50" cy="120" rx="40" ry="15" fill="none" stroke="#ff922b" stroke-width="1.5" opacity="0.6"/>
+    <line x1="10" y1="20" x2="10" y2="120" stroke="#ff922b" stroke-width="1.5" opacity="0.6"/>
+    <line x1="90" y1="20" x2="90" y2="120" stroke="#ff922b" stroke-width="1.5" opacity="0.6"/>
+    <line x1="50" y1="5" x2="50" y2="105" stroke="#ff922b" stroke-width="1" opacity="0.3" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- Floating vertices/points -->
+  <g fill="#00ffff" opacity="0.8">
+    <circle cx="350" cy="80" r="4"/>
+    <circle cx="420" cy="120" r="3"/>
+    <circle cx="780" cy="90" r="4"/>
+    <circle cx="850" cy="140" r="3"/>
+    <circle cx="300" cy="250" r="3"/>
+    <circle cx="900" cy="280" r="4"/>
+  </g>
+
+  <!-- Connection lines between vertices -->
+  <g stroke="#00ffff" stroke-width="1" opacity="0.3">
+    <line x1="350" y1="80" x2="420" y2="120"/>
+    <line x1="780" y1="90" x2="850" y2="140"/>
+    <line x1="420" y1="120" x2="500" y2="100"/>
+    <line x1="850" y1="140" x2="900" y2="150"/>
+  </g>
+
+  <!-- Axis indicator bottom right -->
+  <g transform="translate(1100, 320)">
+    <line x1="0" y1="0" x2="50" y2="0" stroke="#ff6b6b" stroke-width="3"/>
+    <line x1="0" y1="0" x2="0" y2="-50" stroke="#51cf66" stroke-width="3"/>
+    <line x1="0" y1="0" x2="-30" y2="20" stroke="#339af0" stroke-width="3"/>
+    <text x="55" y="5" fill="#ff6b6b" font-size="14" font-family="monospace">X</text>
+    <text x="-8" y="-55" fill="#51cf66" font-size="14" font-family="monospace">Y</text>
+    <text x="-45" y="25" fill="#339af0" font-size="14" font-family="monospace">Z</text>
+  </g>
+
+  <!-- Ambient glow effects -->
+  <circle cx="600" cy="200" r="150" fill="#7b68ee" opacity="0.1"/>
+  <circle cx="250" cy="250" r="80" fill="#ff6b6b" opacity="0.08"/>
+  <circle cx="950" cy="200" r="100" fill="#51cf66" opacity="0.08"/>
+</svg>
