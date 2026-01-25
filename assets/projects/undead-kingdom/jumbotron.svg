@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d0d1a"/>
+      <stop offset="50%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#2d1f3d"/>
+    </linearGradient>
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a"/>
+      <stop offset="100%" style="stop-color:#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="moonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0e6d3"/>
+      <stop offset="100%" style="stop-color:#d4c4a8"/>
+    </linearGradient>
+    <radialGradient id="fogGrad" cx="50%" cy="100%" r="80%">
+      <stop offset="0%" style="stop-color:#4a4a6a;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#4a4a6a;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background sky -->
+  <rect width="1200" height="400" fill="url(#nightSky)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff" opacity="0.6">
+    <circle cx="100" cy="50" r="1.5"/>
+    <circle cx="250" cy="80" r="1"/>
+    <circle cx="400" cy="30" r="1.5"/>
+    <circle cx="550" cy="70" r="1"/>
+    <circle cx="700" cy="40" r="2"/>
+    <circle cx="850" cy="90" r="1"/>
+    <circle cx="950" cy="25" r="1.5"/>
+    <circle cx="1050" cy="60" r="1"/>
+    <circle cx="1150" cy="45" r="1.5"/>
+    <circle cx="180" cy="120" r="1"/>
+    <circle cx="320" cy="100" r="1"/>
+    <circle cx="780" cy="110" r="1"/>
+    <circle cx="1100" cy="100" r="1"/>
+  </g>
+
+  <!-- Moon -->
+  <circle cx="900" cy="80" r="50" fill="url(#moonGlow)"/>
+  <circle cx="920" cy="70" r="50" fill="url(#nightSky)" opacity="0.3"/>
+  <!-- Moon craters -->
+  <circle cx="880" cy="70" r="8" fill="#c9b896" opacity="0.3"/>
+  <circle cx="910" cy="95" r="5" fill="#c9b896" opacity="0.3"/>
+  <circle cx="890" cy="90" r="4" fill="#c9b896" opacity="0.2"/>
+
+  <!-- Moon glow -->
+  <circle cx="900" cy="80" r="70" fill="#f0e6d3" opacity="0.1"/>
+  <circle cx="900" cy="80" r="90" fill="#f0e6d3" opacity="0.05"/>
+
+  <!-- Ground -->
+  <rect x="0" y="300" width="1200" height="100" fill="url(#groundGrad)"/>
+
+  <!-- Fog layer -->
+  <rect x="0" y="250" width="1200" height="150" fill="url(#fogGrad)"/>
+
+  <!-- Dead trees - background -->
+  <g fill="#1a1a1a" opacity="0.6">
+    <!-- Far left tree -->
+    <path d="M50 300 L55 200 L40 180 L55 190 L58 150 L45 140 L60 145 L62 100 L65 145 L75 140 L68 150 L70 190 L85 180 L70 200 L75 300 Z"/>
+    <!-- Far right tree -->
+    <path d="M1150 300 L1155 220 L1140 200 L1155 210 L1158 170 L1145 160 L1160 165 L1165 165 L1175 160 L1168 170 L1170 210 L1185 200 L1170 220 L1175 300 Z"/>
+  </g>
+
+  <!-- Dead trees - midground -->
+  <g fill="#0d0d0d">
+    <!-- Left tree -->
+    <path d="M150 300 L160 180 L130 150 L160 165 L165 100 L140 80 L168 90 L175 50 L180 90 L200 80 L180 100 L185 165 L210 150 L185 180 L195 300 Z"/>
+    <!-- Right tree -->
+    <path d="M1000 300 L1010 200 L980 170 L1010 185 L1015 130 L990 110 L1020 120 L1025 80 L1030 120 L1055 110 L1035 130 L1040 185 L1065 170 L1040 200 L1050 300 Z"/>
+  </g>
+
+  <!-- Gravestones -->
+  <!-- Gravestone 1 -->
+  <g transform="translate(250, 260)">
+    <path d="M0 40 L0 10 Q0 0 15 0 L35 0 Q50 0 50 10 L50 40 Z" fill="#3d3d3d"/>
+    <path d="M5 35 L5 15 Q5 5 15 5 L35 5 Q45 5 45 15 L45 35 Z" fill="#2d2d2d"/>
+    <text x="25" y="25" fill="#4a4a4a" font-size="10" text-anchor="middle" font-family="serif">RIP</text>
+  </g>
+
+  <!-- Gravestone 2 - tilted -->
+  <g transform="translate(400, 250) rotate(10)">
+    <path d="M0 50 L0 15 Q0 0 20 0 L40 0 Q60 0 60 15 L60 50 Z" fill="#3d3d3d"/>
+    <path d="M5 45 L5 20 Q5 5 20 5 L40 5 Q55 5 55 20 L55 45 Z" fill="#2d2d2d"/>
+    <rect x="25" y="12" width="10" height="25" fill="#4a4a4a"/>
+    <rect x="18" y="18" width="24" height="8" fill="#4a4a4a"/>
+  </g>
+
+  <!-- Gravestone 3 -->
+  <g transform="translate(700, 265)">
+    <rect x="0" y="0" width="40" height="35" fill="#3d3d3d"/>
+    <rect x="5" y="5" width="30" height="25" fill="#2d2d2d"/>
+  </g>
+
+  <!-- Gravestone 4 - tilted other way -->
+  <g transform="translate(850, 255) rotate(-8)">
+    <path d="M0 45 L0 12 Q0 0 18 0 L32 0 Q50 0 50 12 L50 45 Z" fill="#3d3d3d"/>
+    <path d="M5 40 L5 17 Q5 5 18 5 L32 5 Q45 5 45 17 L45 40 Z" fill="#2d2d2d"/>
+  </g>
+
+  <!-- Skull on ground -->
+  <g transform="translate(550, 310)">
+    <ellipse cx="25" cy="20" rx="25" ry="20" fill="#d4c4a8"/>
+    <ellipse cx="25" cy="25" rx="20" ry="15" fill="#c9b896"/>
+    <!-- Eye sockets -->
+    <ellipse cx="17" cy="18" rx="6" ry="7" fill="#1a1a1a"/>
+    <ellipse cx="33" cy="18" rx="6" ry="7" fill="#1a1a1a"/>
+    <!-- Nose -->
+    <path d="M25 25 L22 32 L28 32 Z" fill="#1a1a1a"/>
+    <!-- Teeth -->
+    <rect x="15" y="35" width="20" height="8" fill="#c9b896"/>
+    <line x1="18" y1="35" x2="18" y2="43" stroke="#1a1a1a" stroke-width="1"/>
+    <line x1="22" y1="35" x2="22" y2="43" stroke="#1a1a1a" stroke-width="1"/>
+    <line x1="25" y1="35" x2="25" y2="43" stroke="#1a1a1a" stroke-width="1"/>
+    <line x1="28" y1="35" x2="28" y2="43" stroke="#1a1a1a" stroke-width="1"/>
+    <line x1="32" y1="35" x2="32" y2="43" stroke="#1a1a1a" stroke-width="1"/>
+  </g>
+
+  <!-- Bone on ground -->
+  <g transform="translate(650, 340) rotate(20)">
+    <ellipse cx="0" cy="5" rx="8" ry="5" fill="#d4c4a8"/>
+    <ellipse cx="0" cy="-3" rx="6" ry="4" fill="#d4c4a8"/>
+    <rect x="-3" y="5" width="6" height="30" fill="#c9b896"/>
+    <ellipse cx="0" cy="35" rx="8" ry="5" fill="#d4c4a8"/>
+    <ellipse cx="0" cy="43" rx="6" ry="4" fill="#d4c4a8"/>
+  </g>
+
+  <!-- Castle silhouette in background -->
+  <g fill="#0d0d1a" opacity="0.8">
+    <rect x="400" y="150" width="80" height="150"/>
+    <rect x="380" y="180" width="40" height="120"/>
+    <rect x="500" y="180" width="40" height="120"/>
+    <!-- Towers -->
+    <rect x="370" y="130" width="20" height="50"/>
+    <polygon points="365,130 380,100 395,130"/>
+    <rect x="530" y="140" width="20" height="40"/>
+    <polygon points="525,140 540,110 555,140"/>
+    <rect x="420" y="100" width="40" height="50"/>
+    <polygon points="410,100 440,60 470,100"/>
+    <!-- Windows -->
+    <rect x="425" y="180" width="12" height="20" fill="#2d1f3d"/>
+    <rect x="445" y="180" width="12" height="20" fill="#2d1f3d"/>
+    <rect x="435" y="220" width="15" height="30" fill="#2d1f3d"/>
+  </g>
+
+  <!-- Bats -->
+  <g fill="#1a1a1a">
+    <path d="M200 150 Q190 145 185 150 Q188 155 200 150 Q212 155 215 150 Q210 145 200 150 M200 150 L200 155" transform="scale(1.2)"/>
+    <path d="M750 100 Q740 95 735 100 Q738 105 750 100 Q762 105 765 100 Q760 95 750 100 M750 100 L750 105"/>
+    <path d="M650 130 Q640 125 635 130 Q638 135 650 130 Q662 135 665 130 Q660 125 650 130 M650 130 L650 135" transform="scale(0.8)"/>
+  </g>
+
+  <!-- Eerie glow from ground -->
+  <ellipse cx="450" cy="350" rx="100" ry="30" fill="#6b4d8a" opacity="0.2"/>
+  <ellipse cx="750" cy="360" rx="80" ry="25" fill="#6b4d8a" opacity="0.15"/>
+
+  <!-- Ghostly wisps -->
+  <g fill="none" stroke="#8b8bab" stroke-width="2" opacity="0.3">
+    <path d="M300 320 Q320 300 310 280 Q330 290 340 270"/>
+    <path d="M800 330 Q780 310 790 290 Q770 300 760 280"/>
+  </g>
+</svg>

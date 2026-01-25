@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="psychBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a2e"/>
+      <stop offset="25%" style="stop-color:#2d1f5e"/>
+      <stop offset="50%" style="stop-color:#4a1f6e"/>
+      <stop offset="75%" style="stop-color:#2d1f5e"/>
+      <stop offset="100%" style="stop-color:#1a0a2e"/>
+    </linearGradient>
+    <linearGradient id="mushCap1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b9d"/>
+      <stop offset="100%" style="stop-color:#c92a5a"/>
+    </linearGradient>
+    <linearGradient id="mushCap2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4aa"/>
+      <stop offset="100%" style="stop-color:#00896b"/>
+    </linearGradient>
+    <linearGradient id="mushCap3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd93d"/>
+      <stop offset="100%" style="stop-color:#ff8c00"/>
+    </linearGradient>
+    <linearGradient id="mushCap4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a855f7"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="stem" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e8dfd0"/>
+      <stop offset="50%" style="stop-color:#fff"/>
+      <stop offset="100%" style="stop-color:#e8dfd0"/>
+    </linearGradient>
+    <radialGradient id="glowPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#ff6b9d;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#00d4aa;stop-opacity:0"/>
+    </radialGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#psychBg)"/>
+
+  <!-- Swirling background pattern -->
+  <g opacity="0.2">
+    <circle cx="200" cy="200" r="150" fill="none" stroke="#ff6b9d" stroke-width="2"/>
+    <circle cx="200" cy="200" r="120" fill="none" stroke="#00d4aa" stroke-width="2"/>
+    <circle cx="200" cy="200" r="90" fill="none" stroke="#ffd93d" stroke-width="2"/>
+    <circle cx="1000" cy="200" r="180" fill="none" stroke="#a855f7" stroke-width="2"/>
+    <circle cx="1000" cy="200" r="140" fill="none" stroke="#ff6b9d" stroke-width="2"/>
+    <circle cx="1000" cy="200" r="100" fill="none" stroke="#00d4aa" stroke-width="2"/>
+    <circle cx="600" cy="100" r="200" fill="none" stroke="#ffd93d" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- Ground with grass -->
+  <path d="M0 350 Q300 330 600 350 Q900 370 1200 350 L1200 400 L0 400 Z" fill="#1a3a2a"/>
+  <path d="M0 360 Q300 345 600 360 Q900 375 1200 355 L1200 400 L0 400 Z" fill="#0d2a1a"/>
+
+  <!-- Glowing areas -->
+  <circle cx="400" cy="300" r="100" fill="url(#glowPink)"/>
+  <circle cx="750" cy="280" r="120" fill="url(#glowCyan)"/>
+
+  <!-- Large center mushroom -->
+  <g transform="translate(500, 100)">
+    <!-- Glow -->
+    <ellipse cx="100" cy="180" rx="80" ry="40" fill="#ff6b9d" opacity="0.2" filter="url(#blur)"/>
+    <!-- Stem -->
+    <path d="M70 170 Q60 220 70 270 L130 270 Q140 220 130 170 Z" fill="url(#stem)"/>
+    <ellipse cx="100" cy="270" rx="35" ry="10" fill="#d0c0b0"/>
+    <!-- Cap -->
+    <ellipse cx="100" cy="170" rx="90" ry="70" fill="url(#mushCap1)"/>
+    <ellipse cx="100" cy="155" rx="75" ry="55" fill="#ff8db3" opacity="0.5"/>
+    <!-- Spots -->
+    <circle cx="60" cy="150" r="12" fill="#fff" opacity="0.8"/>
+    <circle cx="120" cy="140" r="15" fill="#fff" opacity="0.8"/>
+    <circle cx="85" cy="180" r="10" fill="#fff" opacity="0.7"/>
+    <circle cx="140" cy="170" r="8" fill="#fff" opacity="0.7"/>
+    <circle cx="70" cy="200" r="6" fill="#fff" opacity="0.6"/>
+    <circle cx="130" cy="195" r="9" fill="#fff" opacity="0.6"/>
+    <!-- Under-cap gills -->
+    <path d="M45 170 Q100 200 155 170" fill="none" stroke="#c92a5a" stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <!-- Left tall mushroom -->
+  <g transform="translate(150, 120)">
+    <!-- Stem -->
+    <path d="M30 140 Q25 180 30 230 L70 230 Q75 180 70 140 Z" fill="url(#stem)"/>
+    <ellipse cx="50" cy="230" rx="25" ry="8" fill="#d0c0b0"/>
+    <!-- Cap -->
+    <ellipse cx="50" cy="140" rx="60" ry="50" fill="url(#mushCap2)"/>
+    <ellipse cx="50" cy="128" rx="48" ry="38" fill="#33e0b8" opacity="0.5"/>
+    <!-- Spots -->
+    <circle cx="30" cy="125" r="8" fill="#fff" opacity="0.8"/>
+    <circle cx="65" cy="120" r="10" fill="#fff" opacity="0.8"/>
+    <circle cx="45" cy="150" r="7" fill="#fff" opacity="0.7"/>
+    <circle cx="80" cy="145" r="6" fill="#fff" opacity="0.6"/>
+  </g>
+
+  <!-- Right tall mushroom -->
+  <g transform="translate(900, 130)">
+    <!-- Stem -->
+    <path d="M35 130 Q28 170 35 220 L75 220 Q82 170 75 130 Z" fill="url(#stem)"/>
+    <ellipse cx="55" cy="220" rx="25" ry="8" fill="#d0c0b0"/>
+    <!-- Cap -->
+    <ellipse cx="55" cy="130" rx="65" ry="55" fill="url(#mushCap3)"/>
+    <ellipse cx="55" cy="115" rx="52" ry="42" fill="#ffe066" opacity="0.5"/>
+    <!-- Spots -->
+    <circle cx="35" cy="115" r="9" fill="#fff" opacity="0.8"/>
+    <circle cx="75" cy="110" r="11" fill="#fff" opacity="0.8"/>
+    <circle cx="50" cy="145" r="8" fill="#fff" opacity="0.7"/>
+    <circle cx="90" cy="135" r="6" fill="#fff" opacity="0.6"/>
+  </g>
+
+  <!-- Small foreground mushroom left -->
+  <g transform="translate(50, 280)">
+    <path d="M15 50 Q12 70 15 90 L35 90 Q38 70 35 50 Z" fill="url(#stem)"/>
+    <ellipse cx="25" cy="50" rx="30" ry="25" fill="url(#mushCap4)"/>
+    <circle cx="15" cy="45" r="5" fill="#fff" opacity="0.8"/>
+    <circle cx="32" cy="42" r="6" fill="#fff" opacity="0.8"/>
+  </g>
+
+  <!-- Small foreground mushroom right -->
+  <g transform="translate(1080, 300)">
+    <path d="M12 40 Q10 55 12 75 L28 75 Q30 55 28 40 Z" fill="url(#stem)"/>
+    <ellipse cx="20" cy="40" rx="25" ry="20" fill="url(#mushCap1)"/>
+    <circle cx="12" cy="35" r="4" fill="#fff" opacity="0.8"/>
+    <circle cx="26" cy="33" r="5" fill="#fff" opacity="0.8"/>
+  </g>
+
+  <!-- Small mushroom cluster middle -->
+  <g transform="translate(700, 310)">
+    <path d="M8 35 L8 55 L18 55 L18 35 Z" fill="url(#stem)"/>
+    <ellipse cx="13" cy="35" rx="18" ry="15" fill="url(#mushCap2)"/>
+    <circle cx="8" cy="32" r="3" fill="#fff" opacity="0.8"/>
+    <circle cx="18" cy="30" r="4" fill="#fff" opacity="0.8"/>
+  </g>
+  <g transform="translate(735, 320)">
+    <path d="M6 25 L6 40 L14 40 L14 25 Z" fill="url(#stem)"/>
+    <ellipse cx="10" cy="25" rx="14" ry="12" fill="url(#mushCap3)"/>
+    <circle cx="6" cy="22" r="2" fill="#fff" opacity="0.8"/>
+  </g>
+
+  <!-- Floating spores/particles -->
+  <g fill="#ff6b9d" opacity="0.6">
+    <circle cx="300" cy="150" r="3"/>
+    <circle cx="450" cy="80" r="2"/>
+    <circle cx="700" cy="100" r="3"/>
+    <circle cx="850" cy="180" r="2"/>
+    <circle cx="350" cy="250" r="2"/>
+    <circle cx="550" cy="300" r="3"/>
+    <circle cx="950" cy="250" r="2"/>
+  </g>
+  <g fill="#00d4aa" opacity="0.6">
+    <circle cx="250" cy="200" r="2"/>
+    <circle cx="400" cy="120" r="3"/>
+    <circle cx="600" cy="60" r="2"/>
+    <circle cx="800" cy="220" r="3"/>
+    <circle cx="1050" cy="150" r="2"/>
+  </g>
+  <g fill="#ffd93d" opacity="0.6">
+    <circle cx="180" cy="100" r="2"/>
+    <circle cx="500" cy="50" r="2"/>
+    <circle cx="750" cy="150" r="3"/>
+    <circle cx="900" cy="80" r="2"/>
+    <circle cx="1100" cy="200" r="2"/>
+  </g>
+
+  <!-- Magical swirl lines -->
+  <g fill="none" stroke-width="2" opacity="0.4">
+    <path d="M100 350 Q150 300 200 320 Q250 340 300 300" stroke="#ff6b9d"/>
+    <path d="M400 380 Q450 340 500 360 Q550 380 600 340" stroke="#00d4aa"/>
+    <path d="M800 370 Q850 330 900 350 Q950 370 1000 330" stroke="#ffd93d"/>
+  </g>
+
+  <!-- Stars/sparkles -->
+  <g fill="#fff" opacity="0.8">
+    <polygon points="320,50 322,56 328,56 323,60 325,66 320,62 315,66 317,60 312,56 318,56" />
+    <polygon points="880,40 881,44 885,44 882,47 883,51 880,48 877,51 878,47 875,44 879,44" />
+    <polygon points="150,80 151,84 155,84 152,87 153,91 150,88 147,91 148,87 145,84 149,84" />
+    <polygon points="1050,100 1051,104 1055,104 1052,107 1053,111 1050,108 1047,111 1048,107 1045,104 1049,104" />
+  </g>
+</svg>
