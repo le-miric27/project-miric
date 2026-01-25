@@ -1,0 +1,33 @@
+---
+title: "Shroom Trip"
+description: "Surreal 3D animation exploring fantastical mushroom environments. Features vibrant colors, unique character designs, and dreamlike atmospheres."
+thumbnail: "/assets/projects/shroom-trip/Img_1.png"
+youtubeUrl: "https://youtu.be/4h1RIDp2BoI"
+technologies:
+  - "Blender"
+  - "3D Animation"
+  - "Character Design"
+  - "Environment Design"
+  - "Color Grading"
+sections:
+  - name: "Scenes"
+    images:
+      - "/assets/projects/shroom-trip/Img_1.png"
+      - "/assets/projects/shroom-trip/Img_2.png"
+      - "/assets/projects/shroom-trip/Img_3.png"
+      - "/assets/projects/shroom-trip/Img_4.png"
+      - "/assets/projects/shroom-trip/Img_5.png"
+      - "/assets/projects/shroom-trip/Img_6.png"
+      - "/assets/projects/shroom-trip/Img_7.png"
+      - "/assets/projects/shroom-trip/Img_8.png"
+      - "/assets/projects/shroom-trip/Img_9.png"
+      - "/assets/projects/shroom-trip/Img_10.png"
+      - "/assets/projects/shroom-trip/Img_11.png"
+      - "/assets/projects/shroom-trip/Img_12.png"
+      - "/assets/projects/shroom-trip/Img_13.png"
+      - "/assets/projects/shroom-trip/Img_14.png"
+      - "/assets/projects/shroom-trip/Img_15.png"
+      - "/assets/projects/shroom-trip/Img_16.png"
+      - "/assets/projects/shroom-trip/Img_17.png"
+      - "/assets/projects/shroom-trip/Img_18.png"
+---
