@@ -14,7 +14,7 @@
 3. **Create the TXT record**
    - Click **Create record**
    - Configure:
-     - **Record name**: `blog` (for blog.leo-miric.com) or leave empty (for root domain)
+     - **Record name**: `blog` (for https://le-miric27.github.io/project-miric) or leave empty (for root domain)
      - **Record type**: `TXT`
      - **Value**: `"google-site-verification=YOUR_CODE_HERE"` (include the quotes)
      - **TTL**: `300` (5 minutes)
@@ -30,7 +30,7 @@
 Check if the record is live:
 
 ```bash
-dig TXT blog.leo-miric.com
+dig TXT https://le-miric27.github.io/project-miric
 ```
 
 Or use [Google's DNS checker](https://toolbox.googleapps.com/apps/dig/#TXT/).

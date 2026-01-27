@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal portfolio/blog website for a Full-Stack Developer, built with Hugo static site generator and deployed to GitHub Pages at `blog.leo-miric.com`.
+Personal portfolio/blog website for a Full-Stack Developer, built with Hugo static site generator and deployed to GitHub Pages at `https://le-miric27.github.io/project-miric`.
 
 ## Commands
 

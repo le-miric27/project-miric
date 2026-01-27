@@ -1,4 +1,4 @@
-baseURL = "blog.leo-miric.com/"
+baseURL = "https://le-miric27.github.io/project-miric/"
 languageCode = "en-us"
 title = "Leonardo Mirić | Full-Stack Developer"
 enableGitInfo = true

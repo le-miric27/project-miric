@@ -1,4 +1,4 @@
-# blog.leo-miric.com
+# https://le-miric27.github.io/project-miric
 
 Personal portfolio and blog website for Leonardo Mirić, built with Hugo and deployed to GitHub Pages.
 
