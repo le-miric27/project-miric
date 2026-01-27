@@ -4,7 +4,7 @@ description: "3D animated short film featuring the iconic Baba Yaga house. Compl
 thumbnail: "/assets/projects/baba-yaga/Baba_YagaYHouse.png"
 youtubeUrl: "https://youtu.be/bg9ENRFbums"
 technologies:
-  - "Blender"
+  - "Autodesk Maya"
   - "3D Animation"
   - "Environment Design"
   - "Character Animation"

@@ -4,7 +4,7 @@ description: "3D animated chess sequence showcasing dynamic camera work and ligh
 thumbnail: "/assets/projects/chess/C1.png"
 youtubeUrl: "https://youtu.be/2Rbd6fxWVuI"
 technologies:
-  - "Blender"
+  - "Autodesk Maya"
   - "3D Animation"
   - "Lighting"
   - "Compositing"
